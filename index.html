@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadewas — Branding &amp; Web Design for Brooklyn</title>
+  <meta name="description" content="Nadewas builds bold brands and sharp websites for Brooklyn small businesses and startups ready to stand out, scale up, and get remembered.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"          id="cursor"></div>
+  <div class="cursor-follower" id="follower"></div>
+
+  <!-- ==========================================
+       NAVIGATION
+  =========================================== -->
+  <nav>
+    <a href="#" class="nav-logo">NAD<span>E</span>WAS</a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="#pain">Problem</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#cta" class="nav-cta">Book a Call</a></li>
+    </ul>
+
+    <!-- Hamburger (mobile) -->
+    <button
+      class="hamburger"
+      id="hamburger"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ==========================================
+       MOBILE MENU DRAWER
+  =========================================== -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+    <ul>
+      <li><a href="#pain">Problem</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#stats">Results</a></li>
+    </ul>
+    <div class="mobile-cta-wrap">
+      <a href="#" class="btn-primary"><span>Book a Free Call →</span></a>
+    </div>
+    <p class="mobile-footer-note">Brooklyn, NYC &mdash; <span>Nadewas</span></p>
+  </div>
+
+  <!-- ==========================================
+       HERO
+  =========================================== -->
+  <section id="hero">
+    <div class="hero-bg-shape"></div>
+    <div class="hero-bg-shape2"></div>
+
+    <div class="hero-content">
+      <!-- Left -->
+      <div class="hero-left">
+        <div class="hero-eyebrow reveal">Brooklyn, NYC · Est. 2024</div>
+        <h1 class="hero-headline reveal reveal-delay-1">
+          YOUR<br>
+          <span class="line-orange">BRAND</span><br>
+          <span class="line-outline">SHOULD</span><br>
+          <span class="line-purple">HIT.</span>
+        </h1>
+        <p class="hero-sub reveal reveal-delay-2">
+          Nadewas builds bold brands and sharp websites for Brooklyn small businesses and startups ready to stand out, scale up, and get remembered.
+        </p>
+        <div class="hero-buttons reveal reveal-delay-3">
+          <a href="#" class="btn-primary"><span>Book a Free Call →</span></a>
+          <a href="#services" class="btn-ghost">See Our Work ↓</a>
+        </div>
+      </div>
+
+      <!-- Right — floating cards -->
+      <div class="hero-right">
+        <div class="hero-card reveal reveal-delay-1">
+          <div class="hero-card-icon">⬡</div>
+          <h4>Brand Identity</h4>
+          <p>Logo, color, typography that means something.</p>
+        </div>
+        <div class="hero-card reveal reveal-delay-2">
+          <div class="hero-card-icon">◈</div>
+          <h4>Web Design</h4>
+          <p>Sites that convert strangers into customers.</p>
+        </div>
+        <div class="hero-card reveal reveal-delay-3">
+          <div class="hero-card-icon">◉</div>
+          <h4>Strategy</h4>
+          <p>Positioning that cuts through the noise.</p>
+        </div>
+        <div class="hero-card reveal reveal-delay-4">
+          <div class="hero-card-icon">◫</div>
+          <h4>Launch Ready</h4>
+          <p>Built for Brooklyn, built for growth.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrolling ticker -->
+    <div class="hero-ticker">
+      <div class="ticker-track">
+        <span class="ticker-item"><span class="dot"></span>Brand Identity</span>
+        <span class="ticker-item"><span class="dot"></span>Web Design</span>
+        <span class="ticker-item"><span class="dot"></span>Visual Strategy</span>
+        <span class="ticker-item"><span class="dot"></span>Brooklyn NYC</span>
+        <span class="ticker-item"><span class="dot"></span>Startup Branding</span>
+        <span class="ticker-item"><span class="dot"></span>Small Business</span>
+        <span class="ticker-item"><span class="dot"></span>Logo Design</span>
+        <span class="ticker-item"><span class="dot"></span>Digital Presence</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="ticker-item"><span class="dot"></span>Brand Identity</span>
+        <span class="ticker-item"><span class="dot"></span>Web Design</span>
+        <span class="ticker-item"><span class="dot"></span>Visual Strategy</span>
+        <span class="ticker-item"><span class="dot"></span>Brooklyn NYC</span>
+        <span class="ticker-item"><span class="dot"></span>Startup Branding</span>
+        <span class="ticker-item"><span class="dot"></span>Small Business</span>
+        <span class="ticker-item"><span class="dot"></span>Logo Design</span>
+        <span class="ticker-item"><span class="dot"></span>Digital Presence</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PAIN POINTS
+  =========================================== -->
+  <section id="pain">
+    <div class="pain-header">
+      <div>
+        <div class="section-label reveal">The Problem</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Bad branding<br>is costing you<br><span style="color:var(--orange)">every day.</span>
+        </h2>
+      </div>
+      <p class="pain-intro reveal reveal-delay-2">
+        You built something real. A business worth believing in. But if your brand looks like it was thrown together in a weekend — <strong>people won't believe in it</strong>. In Brooklyn's hyper-competitive market, perception is everything. You can't afford to look amateur.
+      </p>
+    </div>
+
+    <div class="pain-grid">
+      <div class="pain-item reveal">
+        <div class="pain-number">01 — VISIBILITY</div>
+        <h3>You're invisible online</h3>
+        <p>No website, a broken one, or one that nobody ever sees. Customers are searching for exactly what you offer — and finding your competitors instead.</p>
+      </div>
+      <div class="pain-item reveal reveal-delay-1">
+        <div class="pain-number">02 — TRUST</div>
+        <h3>They don't trust you yet</h3>
+        <p>A generic logo and mismatched colors signal "I just started." Even when you've been grinding for years, a weak brand makes you look like an amateur.</p>
+      </div>
+      <div class="pain-item reveal reveal-delay-2">
+        <div class="pain-number">03 — DIFFERENTIATION</div>
+        <h3>You blend in instead of stand out</h3>
+        <p>When you look like every other business on the block, the only thing customers can compare you on is price. You end up racing to the bottom.</p>
+      </div>
+      <div class="pain-item reveal reveal-delay-3">
+        <div class="pain-number">04 — CONVERSION</div>
+        <h3>Visitors don't become buyers</h3>
+        <p>Traffic is useless if your site can't communicate your value in 5 seconds. Most small business websites drive people away rather than convert them.</p>
+      </div>
+      <div class="pain-item reveal reveal-delay-4">
+        <div class="pain-number">05 — CONSISTENCY</div>
+        <h3>Your brand is everywhere and nowhere</h3>
+        <p>Different colors on Instagram, a different vibe on your site, and a logo that doesn't match your business cards. Inconsistency destroys trust.</p>
+      </div>
+      <div class="pain-item reveal reveal-delay-4" style="background: rgba(255,107,0,0.06); border-left: 2px solid var(--orange);">
+        <div class="pain-number" style="color: var(--lime);">THE FIX</div>
+        <h3 style="color: var(--orange);">This is exactly what we solve.</h3>
+        <p>Nadewas was built for businesses like yours. We understand Brooklyn, we understand hustle, and we know how to build brands that work as hard as you do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SERVICES
+  =========================================== -->
+  <section id="services">
+    <div class="services-header">
+      <div>
+        <div class="section-label reveal">What We Do</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Design that<br>does the work<br><span style="color: var(--purple)">for you.</span>
+        </h2>
+      </div>
+      <p class="services-tagline reveal reveal-delay-2">
+        Two core disciplines. One unified goal: make your business impossible to ignore and easy to trust. Every deliverable is built with Brooklyn's competitive market in mind.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-accent"></div>
+        <h3>Brand Identity</h3>
+        <p>We build complete visual identities that capture who you are and make customers feel it. From first impression to lasting loyalty — your brand does the talking.</p>
+        <ul class="service-features">
+          <li>Logo design &amp; variations</li>
+          <li>Color palette &amp; typography system</li>
+          <li>Brand guidelines document</li>
+          <li>Business card &amp; collateral design</li>
+          <li>Social media brand kit</li>
+        </ul>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-accent"></div>
+        <h3>Web Design &amp; Development</h3>
+        <p>Fast, beautiful, and built to convert. We design and build websites that reflect your brand, rank on Google, and turn visitors into paying customers.</p>
+        <ul class="service-features">
+          <li>Custom website design</li>
+          <li>Mobile-first development</li>
+          <li>SEO-ready structure</li>
+          <li>Contact forms &amp; booking integrations</li>
+          <li>Launch &amp; ongoing support</li>
+        </ul>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-accent"></div>
+        <h3>Brand Strategy</h3>
+        <p>Before a single pixel is placed, we dig into who you are, who you serve, and what makes you different. Strategy is the foundation everything else is built on.</p>
+        <ul class="service-features">
+          <li>Brand positioning workshop</li>
+          <li>Competitor landscape analysis</li>
+          <li>Target audience definition</li>
+          <li>Messaging &amp; tone of voice</li>
+          <li>Brand story &amp; narrative</li>
+        </ul>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-accent"></div>
+        <h3>Brand Refresh</h3>
+        <p>Already have a brand but it's not working? We evolve it — keeping what's valuable while fixing what's holding you back. No burning it down, just leveling it up.</p>
+        <ul class="service-features">
+          <li>Brand audit &amp; analysis</li>
+          <li>Logo refinement or redesign</li>
+          <li>Website redesign</li>
+          <li>Updated brand standards</li>
+          <li>Migration &amp; relaunch support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       HOW IT WORKS
+  =========================================== -->
+  <section id="process">
+    <div class="process-header">
+      <div class="section-label reveal">How It Works</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Three steps from<br><span style="color: var(--lime)">blank page</span> to<br>bold brand.
+      </h2>
+    </div>
+
+    <div class="steps-container">
+      <div class="step reveal">
+        <div class="step-number-wrap"><span class="step-number">01</span></div>
+        <h3>Discovery Call</h3>
+        <p>We sit down (virtually or in-person in Brooklyn) and go deep on your business. Your goals, your customers, your competitors, your vibe. We listen first. Then we plan.</p>
+      </div>
+      <div class="step reveal reveal-delay-1">
+        <div class="step-number-wrap"><span class="step-number">02</span></div>
+        <h3>Design &amp; Build</h3>
+        <p>We bring your brand to life. Every choice — color, font, layout, copy direction — is intentional. You get two rounds of revisions to make sure it's exactly right.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-number-wrap"><span class="step-number">03</span></div>
+        <h3>Launch &amp; Grow</h3>
+        <p>We hand over a complete brand system built for real use. Your website goes live, your files are delivered, and you walk away ready to compete at a different level.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       STATS
+  =========================================== -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-number">48h</div>
+        <div class="stat-label">Average First Draft Turnaround</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Brooklyn-Focused Expertise</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-number">3&times;</div>
+        <div class="stat-label">Average Conversion Lift Post-Rebrand</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-number">&infin;</div>
+        <div class="stat-label">Passion for Small Business Wins</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CTA
+  =========================================== -->
+  <section id="cta">
+    <div class="cta-eyebrow reveal">Ready to look the part?</div>
+    <h2 class="cta-title reveal reveal-delay-1">
+      LET'S BUILD<br>
+      <span class="colored">SOMETHING</span><br>
+      <span class="outline">BOLD.</span>
+    </h2>
+    <p class="cta-sub reveal reveal-delay-2">
+      Book a free 30-minute discovery call. No pressure, no pitch deck. Just a real conversation about what your brand needs to win.
+    </p>
+    <div class="cta-buttons reveal reveal-delay-3">
+      <a href="#" class="btn-big">Book Your Free Call &rarr;</a>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+  =========================================== -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h2>NAD<span>E</span>WAS</h2>
+        <p>Branding and web design for Brooklyn small businesses and startups who are ready to be taken seriously.</p>
+        <div class="footer-badge">
+          <span class="blink"></span>
+          Currently Taking New Clients
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Brand Identity</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Brand Strategy</a></li>
+          <li><a href="#">Brand Refresh</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Work</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="mailto:hello@nadewas.com">hello@nadewas.com</a></li>
+          <li><a href="#">Brooklyn, New York</a></li>
+          <li><a href="#">Book a Free Call &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2024 <span>Nadewas</span> &mdash; All rights reserved. Made in Brooklyn.</div>
+      <ul class="footer-socials">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Behance</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
